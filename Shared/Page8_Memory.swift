@@ -11,7 +11,6 @@ struct Page8_Memory: View {
       ForEach(model.items) { item in
         NavigationLink(destination: MemoryView(item: item, model: model), tag: item.id, selection: $selection) { EmptyView() }
       }
-      // NavigationLink(destination: MemoryView(text: views[0], model: model), tag: 0, selection: $selection) { EmptyView() }
       Button("Tap to show 0 to 3") {
         let choice = Int.random(in: 0..<model.items.count)
         print("choice", choice)
