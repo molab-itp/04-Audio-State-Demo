@@ -4,25 +4,27 @@
 import SwiftUI
 
 struct Page4: View {
-  @State private var selection: String? = nil
-  
-  var body: some View {
-    NavigationView {
-      VStack {
-        NavigationLink(destination: Text("View A"), tag: "A", selection: $selection) { EmptyView() }
-        NavigationLink(destination: Text("View B"), tag: "B", selection: $selection) { EmptyView() }
-        
-        Button("Tap to show A") {
-          selection = "A"
+    @State private var selection: String? = nil
+    
+    var body: some View {
+        NavigationStack {
+            VStack {
+                NavigationLink(value: "A") {
+                    Text("Row A")
+                }
+                NavigationLink(value: "B") {
+                    Text("Row B")
+                }
+                NavigationLink(value: "C") {
+                    Text("Row C")
+                }
+            }
+            .navigationTitle("Navigation")
+            .navigationDestination(for: String.self) { str in
+                Text("Detail \(str)")
+            }
         }
-        
-        Button("Tap to show B") {
-          selection = "B"
-        }
-      }
-      .navigationTitle("Navigation")
     }
-  }
 }
 
 struct Page4_Previews: PreviewProvider {
