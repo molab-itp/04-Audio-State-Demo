@@ -38,6 +38,8 @@
 		ABBF9F6627BEF635009089C9 /* Page8_Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF9F6427BEF635009089C9 /* Page8_Memory.swift */; };
 		ABBF9F6827BFFDC0009089C9 /* Page9-Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF9F6727BFFDC0009089C9 /* Page9-Timer.swift */; };
 		ABBF9F6927BFFDC0009089C9 /* Page9-Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF9F6727BFFDC0009089C9 /* Page9-Timer.swift */; };
+		ABEA5BBF2999D7A5005E7148 /* Page4_Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA5BBE2999D7A5005E7148 /* Page4_Stack.swift */; };
+		ABEA5BC02999D7A5005E7148 /* Page4_Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA5BBE2999D7A5005E7148 /* Page4_Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,7 @@
 		ABBF9F6127BEB586009089C9 /* Page7_env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page7_env.swift; sourceTree = "<group>"; };
 		ABBF9F6427BEF635009089C9 /* Page8_Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page8_Memory.swift; sourceTree = "<group>"; };
 		ABBF9F6727BFFDC0009089C9 /* Page9-Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page9-Timer.swift"; sourceTree = "<group>"; };
+		ABEA5BBE2999D7A5005E7148 /* Page4_Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4_Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 				AB1DA33827BE9B6B001A42CD /* Page2_AudioDJ.swift */,
 				AB99AE3727BD774C00ACB97E /* Page3.swift */,
 				AB1DA32F27BE8C17001A42CD /* Page4.swift */,
+				ABEA5BBE2999D7A5005E7148 /* Page4_Stack.swift */,
 				AB1DA33227BE8D4E001A42CD /* Page5.swift */,
 				AB1DA33527BE916E001A42CD /* Page6.swift */,
 				AB1DA33B27BEA139001A42CD /* Page6_AudioDJ.swift */,
@@ -186,7 +190,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					AB99AE1827BD6B9D00ACB97E = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -243,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEA5BBF2999D7A5005E7148 /* Page4_Stack.swift in Sources */,
 				AB1DA33927BE9B6B001A42CD /* Page2_AudioDJ.swift in Sources */,
 				AB1DA32A27BDB169001A42CD /* Page1.swift in Sources */,
 				ABBF9F6527BEF635009089C9 /* Page8_Memory.swift in Sources */,
@@ -265,6 +270,7 @@
 			files = (
 				AB99AE2527BD6B9D00ACB97E /* ContentView.swift in Sources */,
 				AB1DA33127BE8C17001A42CD /* Page4.swift in Sources */,
+				ABEA5BC02999D7A5005E7148 /* Page4_Stack.swift in Sources */,
 				ABBF9F6327BEB586009089C9 /* Page7_env.swift in Sources */,
 				ABBF9F6627BEF635009089C9 /* Page8_Memory.swift in Sources */,
 				AB1DA33727BE916E001A42CD /* Page6.swift in Sources */,
@@ -315,6 +321,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -374,6 +381,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -407,7 +415,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +445,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,9 +467,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -487,9 +497,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
