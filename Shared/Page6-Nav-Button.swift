@@ -17,13 +17,20 @@ struct Page6: View {
                 NavigationLink(value: "B") {
                     Text("Row B")
                 }
+                NavigationLink(value: "C") {
+                    Text("Row C")
+                }
+                
                 Button("Tap for Detail A") {
                     navPath.append( "A" )
                 }
-
                 Button("Tap for Detail B") {
                     navPath.append( "B" )
                 }
+                Button("Tap for Detail C") {
+                    navPath.append( "C" )
+                }
+
                 Spacer()
             }
             .navigationTitle("Navigation")

@@ -5,7 +5,6 @@
 import SwiftUI
 
 struct Page5: View {
-    @State private var selection: String? = nil
     
     var body: some View {
         NavigationStack {

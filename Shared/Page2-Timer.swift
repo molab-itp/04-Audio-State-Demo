@@ -7,7 +7,7 @@ import AVFoundation
 let fps = 30.0
 let secs = 1.0 / fps
 
-struct Page3: View {
+struct Page2: View {
     @State private var soundFile = "scale-1.m4a"
     @State private var player: AVAudioPlayer? = nil
     @State private var startTime = -1.0
@@ -47,8 +47,8 @@ struct Page3: View {
 }
 
 
-struct Page3_Previews: PreviewProvider {
+struct Page2_Previews: PreviewProvider {
     static var previews: some View {
-        Page3()
+        Page2()
     }
 }

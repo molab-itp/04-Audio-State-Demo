@@ -21,7 +21,7 @@ let urlSounds = [
     "https://www.youraccompanist.com/images/stories/Reference%20Scales_Chromatic%20Scale%20On%20F%20Sharp.mp3",
 ]
 
-struct Page2: View {
+struct Page3: View {
     @State private var soundIndex = 0
     @State private var soundFile = urlSounds[0]
     @State private var player: AVAudioPlayer? = nil
@@ -57,9 +57,9 @@ struct Page2: View {
     }
 }
 
-struct Page2_Previews: PreviewProvider {
+struct Page3_Previews: PreviewProvider {
     static var previews: some View {
-        Page2()
+        Page3()
     }
 }
 
