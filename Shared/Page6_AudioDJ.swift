@@ -4,11 +4,11 @@
 import SwiftUI
 
 struct Page6_AudioDJ: View {
-    
-    @StateObject var audioDJ = AudioDJ()
-    
+        
     @State private var navPath = NavigationPath()
     
+    @StateObject var audioDJ = AudioDJ()
+
     let selections = ["A","B","C","D"]
     
     var body: some View {

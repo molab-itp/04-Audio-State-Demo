@@ -1,3 +1,4 @@
+//
 // Dynamic link example
 // decoding the documentation, building on resource example
 
