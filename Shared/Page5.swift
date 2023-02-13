@@ -19,6 +19,7 @@ struct Page5: View {
                 NavigationLink(value: "C") {
                     Text("Row C")
                 }
+                Spacer()
             }
             .navigationTitle("Navigation")
             .navigationDestination(for: String.self) { str in

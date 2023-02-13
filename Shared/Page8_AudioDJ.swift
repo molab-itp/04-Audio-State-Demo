@@ -19,13 +19,13 @@ struct Page8: View {
                         Text( "Row "+str )
                     }
                 }
-                // Spacer()
                 Button("Tap for random A-D") {
                     let index = Int.random(in:0..<selections.count)
                     let sel = selections[index];
                     choose( index )
                     navPath.append(sel)
                 }
+                 Spacer()
             }
             .navigationTitle("Random Pick A-D")
             .navigationDestination(for: String.self) { str in

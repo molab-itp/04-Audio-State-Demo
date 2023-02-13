@@ -24,6 +24,7 @@ struct Page6: View {
                 Button("Tap for Detail B") {
                     navPath.append( "B" )
                 }
+                Spacer()
             }
             .navigationTitle("Navigation")
             .navigationDestination(for: String.self) { str in
