@@ -15,7 +15,6 @@ func loadUrlAudio(_ urlString:String) -> AVAudioPlayer? {
 }
 
 let urlSounds = [
-  "https://file-examples.com/storage/fe863385e163e3b0f92dc53/2017/11/file_example_MP3_700KB.mp3",
   "https://www.youraccompanist.com/images/stories/Reference%20Scales_On%20A%20Flat-G%20Sharp.mp3",
   "https://www.youraccompanist.com/images/stories/Reference%20Scales_Pentatonic%20on%20F%20Sharp.mp3",
   "https://www.youraccompanist.com/images/stories/Reference%20Scales_Chromatic%20Scale%20On%20F%20Sharp.mp3",
@@ -63,11 +62,8 @@ struct Page2_Previews: PreviewProvider {
   }
 }
 
-// fails
-// "https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3",
 
 // Source for audio clips
 // https://www.youraccompanist.com/free-scales-and-warm-ups/reference-scales
 // Reference Scales_On A Flat-G Sharp.mp3
 // https://sound-effects.bbcrewind.co.uk/search?cat=Animals
-// https://file-examples.com/index.php/sample-audio-files/sample-mp3-download/
