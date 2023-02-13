@@ -1,6 +1,5 @@
 //
 // Audio bundled with app
-// https://developer.apple.com/documentation/avfaudio/avaudioplayer
 // @State to track variables that affect UI
 // TimelineView for timer triggered updates
 // Keep audio short
@@ -66,6 +65,8 @@ struct Page1_Previews: PreviewProvider {
         Page1()
     }
 }
+
+// https://developer.apple.com/documentation/avfaudio/avaudioplayer
 
 // https://developer.apple.com/documentation/swiftui/state
 
