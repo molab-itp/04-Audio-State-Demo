@@ -1,39 +1,44 @@
-// Random Pick A - D
+//
+// Dynamic link navigationDestination(for
+// decoding the documentation, building on resource example
+// Navigation with Links and buttons
 
 import SwiftUI
 
 struct Page5: View {
-  @State private var selection: String? = nil
-  let selections = "ABCD"
-  var body: some View {
-    // NavigationView {
-    VStack {
-      NavigationLink(destination: Text("View A"), tag: "A", selection: $selection) { EmptyView() }
-      NavigationLink(destination: Text("View B"), tag: "B", selection: $selection) { EmptyView() }
-      NavigationLink(destination: Text("View C"), tag: "C", selection: $selection) { EmptyView() }
-      NavigationLink(destination: Text("View D"), tag: "D", selection: $selection) { EmptyView() }
-      
-      Button("Tap to show A-D") {
-        let offset = Int.random(in: 0..<selections.count)
-        let index = selections.index(selections.startIndex, offsetBy: offset)
-        let char = selections[index]
-        print("char", char)
-        selection = String(char)
-      }
-      
-    }
-    .navigationTitle("Random Pick A-D")
-  }
-  // }
-}
+    @State private var navPath = NavigationPath()
 
-// print does not show in preview
-// NavigationView already embeded in simultor
+    var body: some View {
+        NavigationStack(path: $navPath) {
+            VStack {
+                NavigationLink(value: "A") {
+                    Text("Row A")
+                }
+                NavigationLink(value: "B") {
+                    Text("Row B")
+                }
+                Button("Tap for Detail A") {
+                    navPath.append( "A" )
+                }
+
+                Button("Tap for Detail B") {
+                    navPath.append( "B" )
+                }
+            }
+            .navigationTitle("Navigation")
+            .navigationDestination(for: String.self) { str in
+                Text("Detail \(str)")
+            }
+        }
+    }
+}
 
 struct Page5_Previews: PreviewProvider {
-  static var previews: some View {
-    NavigationView {
-      Page5()
+    static var previews: some View {
+        Page5()
     }
-  }
 }
+
+
+// https://developer.apple.com/documentation/swiftui/navigationlink
+// https://www.hackingwithswift.com/quick-start/Swiftui/how-to-use-programmatic-navigation-in-swiftui
