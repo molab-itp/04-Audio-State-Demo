@@ -5,7 +5,7 @@
 import SwiftUI
 import AVFoundation
 
-struct Page2_AudioDJ: View {
+struct Page3: View {
     @StateObject var audioDJ = AudioDJ()
     var body: some View {
         TimelineView(.animation) { context in
@@ -102,9 +102,9 @@ class AudioDJ: ObservableObject {
     
 }
 
-struct Page2_AudioDJ_Previews: PreviewProvider {
+struct Page3_Previews: PreviewProvider {
     static var previews: some View {
-        Page2_AudioDJ()
+        Page3()
     }
 }
 

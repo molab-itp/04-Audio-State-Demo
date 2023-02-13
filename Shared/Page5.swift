@@ -1,15 +1,14 @@
 //
-// Dynamic link navigationDestination(for
+// Dynamic link example
 // decoding the documentation, building on resource example
-// Navigation with Links and buttons
 
 import SwiftUI
 
 struct Page5: View {
-    @State private var navPath = NavigationPath()
-
+    @State private var selection: String? = nil
+    
     var body: some View {
-        NavigationStack(path: $navPath) {
+        NavigationStack {
             VStack {
                 NavigationLink(value: "A") {
                     Text("Row A")
@@ -17,12 +16,8 @@ struct Page5: View {
                 NavigationLink(value: "B") {
                     Text("Row B")
                 }
-                Button("Tap for Detail A") {
-                    navPath.append( "A" )
-                }
-
-                Button("Tap for Detail B") {
-                    navPath.append( "B" )
+                NavigationLink(value: "C") {
+                    Text("Row C")
                 }
             }
             .navigationTitle("Navigation")
@@ -38,7 +33,6 @@ struct Page5_Previews: PreviewProvider {
         Page5()
     }
 }
-
 
 // https://developer.apple.com/documentation/swiftui/navigationlink
 // https://www.hackingwithswift.com/quick-start/Swiftui/how-to-use-programmatic-navigation-in-swiftui

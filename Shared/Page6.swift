@@ -1,38 +1,31 @@
 //
-// Dynamic link navigationDestination for
-// navigation with random selection
-// Random Pick A - D
-//  ForEach vs. List
+// Dynamic link navigationDestination(for
+// decoding the documentation, building on resource example
+// Navigation with Links and buttons
 
 import SwiftUI
 
 struct Page6: View {
     @State private var navPath = NavigationPath()
-    
-    let selections = ["A","B","C","D"]
-    
+
     var body: some View {
         NavigationStack(path: $navPath) {
             VStack {
-                // Button does not appear if after List
-                Button("Tap for random A-D") {
-                    guard let sel = selections.randomElement() else { return }
-                    // print does not show in preview
-                    print("sel", sel)
-                    navPath.append(sel)
+                NavigationLink(value: "A") {
+                    Text("Row A")
                 }
-//                ForEach(selections, id: \.self) { str in
-//                    NavigationLink(value: str) {
-//                        Text( "Row "+str )
-//                    }
-//                }
-                List(selections, id: \.self ) { str in
-                    NavigationLink(value: str) {
-                        Text( "Row "+str )
-                    }
+                NavigationLink(value: "B") {
+                    Text("Row B")
+                }
+                Button("Tap for Detail A") {
+                    navPath.append( "A" )
+                }
+
+                Button("Tap for Detail B") {
+                    navPath.append( "B" )
                 }
             }
-            .navigationTitle("Random Pick A-D")
+            .navigationTitle("Navigation")
             .navigationDestination(for: String.self) { str in
                 Text("Detail \(str)")
             }
@@ -45,3 +38,7 @@ struct Page6_Previews: PreviewProvider {
         Page6()
     }
 }
+
+
+// https://developer.apple.com/documentation/swiftui/navigationlink
+// https://www.hackingwithswift.com/quick-start/Swiftui/how-to-use-programmatic-navigation-in-swiftui

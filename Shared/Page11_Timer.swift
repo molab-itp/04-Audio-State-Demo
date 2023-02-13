@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-struct Page9_Timer: View {
+struct Page11: View {
     // Time remaining in seconds. The source of truth.
     @State var timeRemaining = 60
     
@@ -73,9 +73,9 @@ struct TimeDisplay: View {
     }
 }
 
-struct Page9_Timer_Previews: PreviewProvider {
+struct Pag11_Previews: PreviewProvider {
     static var previews: some View {
-        Page9_Timer()
+        Page11()
     }
 }
 

@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-struct Page8_Memory: View {
+struct Page10: View {
     
     @State private var navPath = NavigationPath()
     
@@ -115,10 +115,10 @@ struct MemoryView: View {
     }
 }
 
-struct Page8_Memory_Previews: PreviewProvider {
+struct Page10_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            Page8_Memory()
+            Page10()
                 .environmentObject(AudioDJ())
         }
     }
