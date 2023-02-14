@@ -9,7 +9,7 @@ struct Page9: View {
     
     @EnvironmentObject var audioDJ:AudioDJ
     
-    let selections = ["A","B","C","D"]
+    let selections = ["0-A","1-B","2-C","3-D"]
 
     
     var body: some View {

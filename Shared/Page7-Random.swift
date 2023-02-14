@@ -9,7 +9,7 @@ import SwiftUI
 struct Page7: View {
     @State private var navPath = NavigationPath()
     
-    let selections = ["A","B","C","D"]
+    let selections = ["0-A","1-B","2-C","3-D"]
     
     var body: some View {
         NavigationStack(path: $navPath) {
