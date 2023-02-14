@@ -31,7 +31,7 @@ struct Page2: View {
                 Text("currentTime " + String(format: "%.1f", player.currentTime))
             }
             Text("lapse "+String(format: "%.1f", lapse))
-            Button("Reset lapse") {
+            Button("Reset-Lapse") {
                 startTime = Date().timeIntervalSinceReferenceDate
             }
         }
