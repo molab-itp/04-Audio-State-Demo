@@ -31,9 +31,8 @@ struct Page10: View {
             }
             .navigationTitle("Random Pick 0-3")
             .navigationDestination(for: Int.self) { index in
-                if let item = model.items[index] {
-                    MemoryView(item: item, model: model)
-                }
+                let item = model.items[index]
+                MemoryView(item: item, model: model)
             }
             .onAppear {
                 audioDJ.stop()
