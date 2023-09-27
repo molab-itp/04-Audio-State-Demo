@@ -33,7 +33,7 @@ struct NavButtonView: View {
 
                 Spacer()
             }
-            .navigationTitle("Navigation")
+            .navigationTitle("NavButtonView")
             .navigationDestination(for: String.self) { str in
                 Text("Detail \(str)")
             }

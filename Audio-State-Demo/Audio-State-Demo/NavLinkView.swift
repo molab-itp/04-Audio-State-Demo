@@ -20,7 +20,7 @@ struct NavLinkView: View {
                 }
                 Spacer()
             }
-            .navigationTitle("Navigation")
+            .navigationTitle("NavLinkView")
             .navigationDestination(for: String.self) { str in
                 Text("Detail \(str)")
             }
