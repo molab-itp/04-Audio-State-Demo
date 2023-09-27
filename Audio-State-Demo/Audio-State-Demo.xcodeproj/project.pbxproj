@@ -81,9 +81,9 @@
 			children = (
 				AB7302212AB3A65C00654C23 /* Audio_State_DemoApp.swift */,
 				AB7302232AB3A65C00654C23 /* ContentView.swift */,
-				AB73023D2AB3A6ED00654C23 /* LapseTimerView.swift */,
 				AB7302362AB3A6ED00654C23 /* CountDownTimerView.swift */,
 				AB7302392AB3A6ED00654C23 /* PlayAudioView.swift */,
+				AB73023D2AB3A6ED00654C23 /* LapseTimerView.swift */,
 				AB7302372AB3A6ED00654C23 /* PlayAudioUrlView.swift */,
 				AB73023C2AB3A6ED00654C23 /* PlayAudioDJView.swift */,
 				AB0F8D2F2AC4A92E0055859D /* AudioDJ.swift */,

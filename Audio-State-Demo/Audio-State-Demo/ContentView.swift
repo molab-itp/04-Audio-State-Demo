@@ -11,14 +11,14 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink (destination: LapseTimerView()) {
-                    Text("LapseTimerView")
-                }
                 NavigationLink (destination: CountDownTimerView()) {
                     Text("CountDownTimerView")
                 }
                 NavigationLink (destination: PlayAudioView()) {
                     Text("PlayAudioView")
+                }
+                NavigationLink (destination: LapseTimerView()) {
+                    Text("LapseTimerView")
                 }
                 NavigationLink (destination: PlayAudioUrlView()) {
                     Text("PlayAudioUrlView")
