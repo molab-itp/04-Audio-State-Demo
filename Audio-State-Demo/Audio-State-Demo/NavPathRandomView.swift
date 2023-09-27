@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-struct Page7: View {
+struct NavPathRandomView: View {
     @State private var navPath = NavigationPath()
     
     let selections = ["0-A","1-B","2-C","3-D"]
@@ -42,6 +42,6 @@ struct Page7: View {
 
 struct Page7_Previews: PreviewProvider {
     static var previews: some View {
-        Page7()
+        NavPathRandomView()
     }
 }

@@ -13,6 +13,10 @@ let bundleAudio = [
     "scale-1.m4a"
 ];
 
+// Create a Audio Player given a file stored in the app bundle
+// Detailed documntation on AVAudioPlayer
+//  https://developer.apple.com/documentation/avfaudio/avaudioplayer
+
 func loadBundleAudio(_ fileName:String) -> AVAudioPlayer? {
     let path = Bundle.main.path(forResource: fileName, ofType:nil)!
     let url = URL(fileURLWithPath: path)
@@ -24,7 +28,7 @@ func loadBundleAudio(_ fileName:String) -> AVAudioPlayer? {
     return nil
 }
 
-struct Page1: View {
+struct PlayAudioView: View {
     @State private var soundIndex = 0
     @State private var soundFile = bundleAudio[0]
     @State private var player: AVAudioPlayer? = nil
@@ -62,7 +66,7 @@ struct Page1: View {
 
 struct Page1_Previews: PreviewProvider {
     static var previews: some View {
-        Page1()
+        PlayAudioView()
     }
 }
 

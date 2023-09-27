@@ -1,22 +1,23 @@
-// Use AudioDJ to pick a audio to accompany view
-// everytime view is created a new AudioDJ is created
+// Use AudioDJ from environment
+// ensure only one instance for the app
 
 import SwiftUI
 
-struct Page8: View {
-        
+struct NavPathAudioDJEnvView: View {
+    
     @State private var navPath = NavigationPath()
     
-    @StateObject var audioDJ = AudioDJ()
-
+    @EnvironmentObject var audioDJ:AudioDJ
+    
     let selections = ["0-A","1-B","2-C","3-D"]
+
     
     var body: some View {
         NavigationStack(path: $navPath) {
             VStack {
                 ForEach(selections, id: \.self) { str in
                     NavigationLink(value: str) {
-                        Text( "Row "+str )
+                        EmptyView()
                     }
                 }
                 Button("Tap for random A-D") {
@@ -25,9 +26,8 @@ struct Page8: View {
                     choose( index )
                     navPath.append(sel)
                 }
-                 Spacer()
             }
-            .navigationTitle("Random Pick A-D")
+            .navigationTitle("NavPathAudioDJEnvView")
             .navigationDestination(for: String.self) { str in
                 Text("Detail \(str)")
             }
@@ -43,10 +43,11 @@ struct Page8: View {
     }
 }
 
-struct Page8_Previews: PreviewProvider {
+struct Page9_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            Page8()
+            NavPathAudioDJEnvView()
+                .environmentObject(AudioDJ())
         }
     }
 }
