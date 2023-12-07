@@ -6,3 +6,5 @@
 
 - NavigationLink to create random navigation while audio continues to play
 
+- https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-programmatic-navigation-in-swiftui
+
