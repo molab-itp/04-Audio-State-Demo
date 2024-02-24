@@ -7,7 +7,7 @@ struct NavPathAudioDJRandomView: View {
         
     @State private var navPath = NavigationPath()
     
-    @StateObject var audioDJ = AudioDJ()
+    @EnvironmentObject var audioDJ:AudioDJ;
 
     let selections = ["0-A","1-B","2-C","3-D"]
     
@@ -48,5 +48,7 @@ struct Page8_Previews: PreviewProvider {
         NavigationView {
             NavPathAudioDJRandomView()
         }
+        .environmentObject(AudioDJ())
+
     }
 }

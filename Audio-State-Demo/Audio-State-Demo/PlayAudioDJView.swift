@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct PlayAudioDJView: View {
-    @StateObject var audioDJ = AudioDJ()
+    @EnvironmentObject var audioDJ:AudioDJ;
     var body: some View {
         TimelineView(.animation) { context in
             VStack {
@@ -34,6 +34,8 @@ struct PlayAudioDJView: View {
 struct Page4_Previews: PreviewProvider {
     static var previews: some View {
         PlayAudioDJView()
+            .environmentObject(AudioDJ())
+
     }
 }
 
