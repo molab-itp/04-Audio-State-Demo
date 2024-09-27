@@ -73,10 +73,8 @@ struct TimeDisplay: View {
     }
 }
 
-struct Pag11_Previews: PreviewProvider {
-    static var previews: some View {
-        CountDownTimerView()
-    }
+#Preview {
+    CountDownTimerView()
 }
 
 // Source

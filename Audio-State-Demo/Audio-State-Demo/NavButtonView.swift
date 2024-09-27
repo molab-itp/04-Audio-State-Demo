@@ -10,7 +10,7 @@ struct NavButtonView: View {
 
     var body: some View {
         NavigationStack(path: $navPath) {
-            VStack {
+            VStack(spacing: 20) {
                 NavigationLink(value: "A") {
                     Text("Row A")
                 }
@@ -41,11 +41,10 @@ struct NavButtonView: View {
     }
 }
 
-struct Page6_Previews: PreviewProvider {
-    static var previews: some View {
-        NavButtonView()
-    }
+#Preview {
+    NavButtonView()
 }
+
 
 
 // https://developer.apple.com/documentation/swiftui/navigationlink

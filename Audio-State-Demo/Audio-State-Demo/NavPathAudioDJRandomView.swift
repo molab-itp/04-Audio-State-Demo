@@ -13,19 +13,22 @@ struct NavPathAudioDJRandomView: View {
     
     var body: some View {
         NavigationStack(path: $navPath) {
-            VStack {
+            VStack(spacing: 20) {
+                Text("Row navigaion without associated action")
                 ForEach(selections, id: \.self) { str in
                     NavigationLink(value: str) {
                         Text( "Row "+str )
                     }
                 }
+                Text("Button navigaion associated action")
                 Button("Tap for random A-D") {
                     let index = Int.random(in:0..<selections.count)
                     let sel = selections[index];
                     choose( index )
                     navPath.append(sel)
                 }
-                 Spacer()
+                .font(.title)
+                Spacer()
             }
             .navigationTitle("Random Pick A-D")
             .navigationDestination(for: String.self) { str in
@@ -43,12 +46,30 @@ struct NavPathAudioDJRandomView: View {
     }
 }
 
-struct Page8_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            NavPathAudioDJRandomView()
-        }
-        .environmentObject(AudioDJ())
-
+#Preview {
+    NavigationView {
+        NavPathAudioDJRandomView()
     }
+    .environmentObject(AudioDJ())
 }
+
+//struct Page8_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NavigationView {
+//            NavPathAudioDJRandomView()
+//        }
+//        .environmentObject(AudioDJ())
+//    }
+//}
+
+// https://chatgpt.com/c/66f67050-4b18-8002-b1a4-b6856c90e1d7
+// For SwiftUI for a Button how to increase text size
+/*
+ Button(action: {
+    // Your action here
+ }) {
+    Text("Click Me")
+        .font(.title) // Predefined title font size
+ }
+ */
+

@@ -64,10 +64,8 @@ struct PlayAudioView: View {
     }
 }
 
-struct Page1_Previews: PreviewProvider {
-    static var previews: some View {
-        PlayAudioView()
-    }
+#Preview {
+    PlayAudioView()
 }
 
 // https://developer.apple.com/documentation/avfaudio/avaudioplayer

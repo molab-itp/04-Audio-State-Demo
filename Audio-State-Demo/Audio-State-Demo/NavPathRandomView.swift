@@ -35,8 +35,6 @@ struct NavPathRandomView: View {
     }
 }
 
-struct Page7_Previews: PreviewProvider {
-    static var previews: some View {
-        NavPathRandomView()
-    }
+#Preview {
+    NavPathRandomView()
 }

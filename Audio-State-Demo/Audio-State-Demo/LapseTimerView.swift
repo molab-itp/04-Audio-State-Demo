@@ -46,9 +46,6 @@ struct LapseTimerView: View {
     }
 }
 
-
-struct Page2_Previews: PreviewProvider {
-    static var previews: some View {
-        LapseTimerView()
-    }
+#Preview {
+    LapseTimerView()
 }

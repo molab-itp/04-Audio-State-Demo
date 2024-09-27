@@ -8,7 +8,7 @@ struct NavLinkView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
+            VStack(spacing: 20) {
                 NavigationLink(value: "A") {
                     Text("Row A")
                 }
@@ -28,10 +28,8 @@ struct NavLinkView: View {
     }
 }
 
-struct Page5_Previews: PreviewProvider {
-    static var previews: some View {
-        NavLinkView()
-    }
+#Preview {
+    NavLinkView()
 }
 
 // https://developer.apple.com/documentation/swiftui/navigationlink

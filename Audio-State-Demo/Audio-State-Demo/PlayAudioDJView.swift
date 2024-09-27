@@ -31,11 +31,15 @@ struct PlayAudioDJView: View {
     }
 }
 
-struct Page4_Previews: PreviewProvider {
-    static var previews: some View {
-        PlayAudioDJView()
-            .environmentObject(AudioDJ())
-
-    }
+#Preview {
+    PlayAudioDJView()
+        .environmentObject(AudioDJ())
 }
 
+//struct Page4_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PlayAudioDJView()
+//            .environmentObject(AudioDJ())
+//    }
+//}
+//

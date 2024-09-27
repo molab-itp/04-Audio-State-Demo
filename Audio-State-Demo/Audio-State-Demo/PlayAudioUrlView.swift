@@ -59,12 +59,9 @@ struct PlayAudioUrlView: View {
     }
 }
 
-struct Page3_Previews: PreviewProvider {
-    static var previews: some View {
-        PlayAudioUrlView()
-    }
+#Preview {
+    PlayAudioUrlView()
 }
-
 
 // Source for audio clips
 // https://www.youraccompanist.com/free-scales-and-warm-ups/reference-scales
