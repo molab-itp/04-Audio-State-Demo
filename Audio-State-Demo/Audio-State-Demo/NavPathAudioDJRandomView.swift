@@ -23,9 +23,9 @@ struct NavPathAudioDJRandomView: View {
                 Text("Button navigaion associated action")
                 Button("Tap for random A-D") {
                     let index = Int.random(in:0..<selections.count)
-                    let sel = selections[index];
+                    let str = selections[index];
                     choose( index )
-                    navPath.append(sel)
+                    navPath.append(str)
                 }
                 .font(.title)
                 Spacer()
