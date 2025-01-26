@@ -2,7 +2,7 @@
 
 - Demonstration of using AVAudioPlayer to play both internal and web based audio files
 
-- Tracking data using @State, @StateObject and @EnvironmentObject
+- Track data using @Observable, @Environment, .environment(
 
 - NavigationLink to create random navigation while audio continues to play
 
@@ -11,3 +11,7 @@
 ## Changes
 
 - use @Observable, upgrade from ObservableObject
+
+## Retired
+
+- Tracking data using @State, @StateObject and @EnvironmentObject
