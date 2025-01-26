@@ -8,3 +8,6 @@
 
 - https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-programmatic-navigation-in-swiftui
 
+## Changes
+
+- use @Observable, upgrade from ObservableObject
