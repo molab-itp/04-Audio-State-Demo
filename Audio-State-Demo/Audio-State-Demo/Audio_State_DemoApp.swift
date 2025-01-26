@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct Audio_State_DemoApp: App {
-    @StateObject var audioDJ = AudioDJ()
+    @State var audioDJ = AudioDJ()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(audioDJ)
+                .environment(audioDJ)
         }
     }
 }
