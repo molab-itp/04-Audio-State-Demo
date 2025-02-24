@@ -69,6 +69,7 @@ class AudioDJ {
     }
     
     static let audioRef = [
+      "snare_D1.wav",
         "https://www.youraccompanist.com/images/stories/Reference%20Scales_On%20A%20Flat-G%20Sharp.mp3",
         "bbc-birds-1.m4a",
         "https://www.youraccompanist.com/images/stories/Reference%20Scales_Pentatonic%20on%20F%20Sharp.mp3",
@@ -77,3 +78,5 @@ class AudioDJ {
     ]
     
 }
+
+// snare_D1.wav from https://github.com/AudioKit/Cookbook
