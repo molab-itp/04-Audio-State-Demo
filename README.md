@@ -15,3 +15,16 @@
 ## Retired
 
 - Tracking data using @State, @StateObject and @EnvironmentObject
+
+
+```
+
+- build rule apply once to folder
+
+- copy bundle resources in Targets / build phases
+
+- Samples from https://github.com/AudioKit/Cookbook
+
+
+```
+

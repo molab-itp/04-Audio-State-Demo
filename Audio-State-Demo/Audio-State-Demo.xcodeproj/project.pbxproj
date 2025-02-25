@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB0F8D302AC4A92E0055859D /* AudioDJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0F8D2F2AC4A92E0055859D /* AudioDJ.swift */; };
 		AB542FB82D6D124D008301C6 /* snare_D1.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB542FB72D6D124D008301C6 /* snare_D1.wav */; };
+		AB671F9D2D6DF86500AF1E5E /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = AB671F9C2D6DF83E00AF1E5E /* Samples */; };
 		AB7302222AB3A65C00654C23 /* Audio_State_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7302212AB3A65C00654C23 /* Audio_State_DemoApp.swift */; };
 		AB7302242AB3A65C00654C23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7302232AB3A65C00654C23 /* ContentView.swift */; };
 		AB7302262AB3A65D00654C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7302252AB3A65D00654C23 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		AB0F8D2F2AC4A92E0055859D /* AudioDJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDJ.swift; sourceTree = "<group>"; };
 		AB542FB72D6D124D008301C6 /* snare_D1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare_D1.wav; sourceTree = "<group>"; };
+		AB671F9C2D6DF83E00AF1E5E /* Samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Samples; sourceTree = "<group>"; };
 		AB73021E2AB3A65C00654C23 /* Audio-State-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio-State-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7302212AB3A65C00654C23 /* Audio_State_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio_State_DemoApp.swift; sourceTree = "<group>"; };
 		AB7302232AB3A65C00654C23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		AB7302202AB3A65C00654C23 /* Audio-State-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				AB671F9C2D6DF83E00AF1E5E /* Samples */,
 				AB7302212AB3A65C00654C23 /* Audio_State_DemoApp.swift */,
 				AB7302232AB3A65C00654C23 /* ContentView.swift */,
 				AB7302362AB3A6ED00654C23 /* CountDownTimerView.swift */,
@@ -177,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB671F9D2D6DF86500AF1E5E /* Samples in Resources */,
 				AB7302402AB3A6ED00654C23 /* bbc-birds-2.m4a in Resources */,
 				AB7302292AB3A65D00654C23 /* Preview Assets.xcassets in Resources */,
 				AB73023F2AB3A6ED00654C23 /* bbc-birds-1.m4a in Resources */,
