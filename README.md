@@ -12,6 +12,7 @@
 
 - added ProgressView to PlayAudioDJView
 - wasPlaying to AudioDJ
+- Samples from https://github.com/AudioKit/Cookbook
 
 - use @Observable, upgrade from ObservableObject
 
@@ -22,10 +23,9 @@
 
 ```
 
+- Samples resource folder:
 - build rule apply once to folder
-
 - copy bundle resources in Targets / build phases
-
 - Samples from https://github.com/AudioKit/Cookbook
 
 
