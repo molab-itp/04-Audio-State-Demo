@@ -75,6 +75,7 @@ class AudioDJ {
 
   static let audioRef = [
     "Samples/alphabet.mp3",
+    "Samples/Bass Synth.mp3",
     "snare_D1.wav",
     "https://www.youraccompanist.com/images/stories/Reference%20Scales_On%20A%20Flat-G%20Sharp.mp3",
     "bbc-birds-1.m4a",
