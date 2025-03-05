@@ -10,6 +10,9 @@
 
 ## Changes
 
+- added ProgressView to PlayAudioDJView
+- wasPlaying to AudioDJ
+
 - use @Observable, upgrade from ObservableObject
 
 ## Retired

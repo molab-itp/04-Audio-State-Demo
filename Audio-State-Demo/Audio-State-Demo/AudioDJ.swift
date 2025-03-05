@@ -31,7 +31,12 @@ class AudioDJ {
   }
 
   func next() {
+    let wasPlaying = player != nil
+    stop()
     choose(soundIndex + 1)
+    if wasPlaying {
+      play()
+    }
   }
 
   func choose(_ index: Int) {
